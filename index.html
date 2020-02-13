@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Survey Form</title>
+            <link rel="stylesheet" type="text/css" href="./style.css">
+        </head>
+        <body>
+            
+            <div class="main">
+                <h1 id="title">The Best Soccer Player</h1>
+                <p id="description">This is the survey where you can tell us about your favorite soccer player.</p>
+                <form id="survey-form">
+                    <label id="name-label">Name:</label>
+                    <input id="name" type="text" placeholder="Name" required>
+                    <br>
+                    <br>
+                    <label id="email-label">Email:</label>
+                    <input id="email" type="email" placeholder="Email" required>
+                    <br>
+                    <br>
+                    <label id="number-label">Number:</label>
+                    <input id="number" type="number" min="0" max="10" placeholder="#" required>
+                    <br>
+                    <br>
+                    <select id="dropdown" name="soccer-player">
+                        <option value="ronaldo">Ronaldo</option>
+                        <option value="mesi">Mesi</option>
+                        <option value="zidan">Zidan</option>
+                        <option value="pele">Pele</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br>
+                    <br>
+                    <input type="radio" id="radio" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" id="radio" name="gender" value="female">
+                    <label for="female">Female</label>  
+                    <br>
+                    <input type="radio" id="radio" name="gender" value="other">
+                    <label for="other">Other</label>
+                    <br>
+                    <br>
+                    <p>Positions:</p>
+                    <input id="checkbox" type="checkbox" name="position1" value="cf">
+                    <label for="position1">CF</label>
+                    <br>
+                    <input id="checkbox" type="checkbox" name="position2" value="cm">
+                    <label for="position2">CM</label>
+                    <br>
+                    <input id="checkbox" type="checkbox" name="position3" value="sw" checked>
+                    <label for="position3">SW</label>
+                    <br>
+                    <br>
+                    <textarea class="input-textarea" placeholder="Comment"></textarea>
+                    <br>
+                    <br>
+                    <input id="submit" type="submit">
+                </form>
+            </div>
+            
+        </body>
+    </html>
